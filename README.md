@@ -1,99 +1,122 @@
-# 📝 TodoApp – Spring Boot 4 + Thymeleaf + MySQL
+# 📝 TodoApp – Full Stack Spring Boot 4 Application
 
-A full-stack Task Management Web Application built using Spring Boot 4, Spring MVC, Spring Data JPA, Thymeleaf, and MySQL.
-
-This project demonstrates clean layered architecture and real-world CRUD operations using modern Java (21).
+Production-ready Task Management Web Application built using Spring Boot 4, Spring MVC, Thymeleaf, and MySQL.
 
 ---
 
-## 🚀 Features
+## 🚀 Overview
 
-- ✅ Add New Tasks
-- 📋 View All Tasks
-- ✏️ Edit Tasks
-- 🗑 Delete Tasks
-- 💾 MySQL Database Integration
-- 🎨 Responsive UI using Bootstrap 5
-- 🧱 Clean MVC + Service Layer Architecture
+TodoApp is a clean and scalable full-stack web application that allows users to manage daily tasks efficiently.
+
+It demonstrates:
+
+- Layered MVC Architecture  
+- Service–Repository Pattern  
+- Database Integration using JPA  
+- Server-Side Rendering with Thymeleaf  
+- Responsive UI with Bootstrap 5  
+- Modern Java 21 Development  
 
 ---
 
 ## 🛠 Tech Stack
 
-- Java 21
-- Spring Boot 4.0.3
-- Spring MVC
-- Spring Data JPA (Hibernate)
-- Thymeleaf
-- MySQL
-- Lombok
-- Maven
+Java 21  
+Spring Boot 4.0.3  
+Spring MVC  
+Spring Data JPA (Hibernate)  
+Thymeleaf  
+MySQL  
+Lombok  
+Maven  
 
 ---
 
 ## 📁 Project Structure
 
-src/main/java/com/app/todoapp
-
-├── controller     → Handles HTTP requests  
-├── models         → Entity classes  
-├── repository     → JPA Repositories  
-├── services       → Business logic  
-└── TodoappApplication.java  
-
-src/main/resources
-
-├── templates  
-│     ├── tasks.html  
-│     └── edit-task.html  
-└── application.properties  
+```
+todoapp
+│
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+│
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com.app.todoapp
+    │   │       ├── controller
+    │   │       ├── models
+    │   │       ├── repository
+    │   │       ├── services
+    │   │       └── TodoappApplication.java
+    │   │
+    │   └── resources
+    │       ├── templates
+    │       │   ├── tasks.html
+    │       │   └── edit-task.html
+    │       └── application.properties
+    │
+    └── test
+        └── java
+            └── com.app.todoapp
+```
 
 ---
 
-## 🧠 Architecture
+## 🧠 Architecture Flow
 
 Client (Browser)  
 ↓  
-Controller  
+Controller Layer  
 ↓  
-Service  
+Service Layer  
 ↓  
-Repository  
+Repository Layer  
 ↓  
 MySQL Database  
 
-- Controller manages routes  
-- Service contains business logic  
-- Repository communicates with database  
-- Thymeleaf renders dynamic HTML  
+---
+
+## ✨ Features
+
+- Add Tasks  
+- View All Tasks  
+- Edit Tasks  
+- Delete Tasks  
+- Persistent MySQL Storage  
+- Fully Responsive UI  
 
 ---
 
-## ⚙️ Setup & Run
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/todoapp.git  
+git clone https://github.com/Manu577228/todoapp.git  
 cd todoapp  
 
 ### 2️⃣ Configure MySQL
 
-Update `src/main/resources/application.properties`:
+Open:
+
+src/main/resources/application.properties
+
+Add:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/todo_db  
 spring.datasource.username=root  
 spring.datasource.password=your_password  
 spring.jpa.hibernate.ddl-auto=update  
+spring.jpa.show-sql=true  
 
 Make sure MySQL is running and database `todo_db` exists.
 
 ### 3️⃣ Run Application
 
-Using Maven Wrapper:
-
 ./mvnw spring-boot:run  
 
-Or:
+or  
 
 mvn spring-boot:run  
 
@@ -103,41 +126,23 @@ http://localhost:8080
 
 ---
 
-## 🧪 Testing Dependencies Included
+## 🧪 Testing Support
 
-- spring-boot-starter-data-jpa-test
-- spring-boot-starter-thymeleaf-test
-- spring-boot-starter-webmvc-test
-
-You can add unit and integration tests easily.
+spring-boot-starter-data-jpa-test  
+spring-boot-starter-thymeleaf-test  
+spring-boot-starter-webmvc-test  
 
 ---
 
 ## 🌟 Future Enhancements
 
-- 🔐 Add Spring Security (Authentication)
-- 🔎 Task Filtering (Completed / Pending)
-- 📊 Pagination
-- 🐳 Docker Support
-- ☁️ Cloud Deployment (AWS / Render)
-- 🧪 Full Test Coverage
-
----
-
-## 🎯 What This Project Demonstrates
-
-- Modern Spring Boot 4 architecture
-- Clean separation of concerns
-- Database integration with JPA
-- Server-side rendering using Thymeleaf
-- Production-style folder structure
-- Real-world CRUD application
-
-Perfect for:
-- Portfolio Projects
-- Internship Applications
-- Backend Development Practice
-- Spring Boot Learning
+- Spring Security Authentication  
+- Search & Filtering  
+- Pagination  
+- Docker Support  
+- Cloud Deployment  
+- Full Test Coverage  
+- REST API Version  
 
 ---
 
@@ -145,4 +150,7 @@ Perfect for:
 
 Bharadwaj  
 
-If you found this useful, consider giving it a ⭐ on GitHub!
+GitHub: https://github.com/Manu577228  
+YouTube: https://youtube.com/@code-with-Bharadwaj  
+
+If you found this helpful, consider giving it a ⭐ on GitHub!
